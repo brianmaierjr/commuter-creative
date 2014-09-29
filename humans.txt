@@ -1,0 +1,17 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+  Owner: Brian Maier Jr.
+  Site: Commuter Creative
+  Twitter: @commuterordie
+  Location: Louisville, Ky
+
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: Modernizr, jQuery, Bolerplate
+  Software: Sublime Text 2, Photoshop, Illustrator, Cyberduck
+
+
