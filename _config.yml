@@ -1,0 +1,33 @@
+title: Commuter Creative
+description: The best Jekyll themes on the planet
+
+# url: http://brianmaierjr.github.com/frameset
+# baseurl: "/frameset"
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
+
+markdown: kramdown
+highlighter: rouge
+gems: [jekyll-paginate]
+paginate: 5
+
+collections:
+  themes:
+    output: true
+    permalink: /themes/:path/
+
+navigation:
+ - title: Themes
+   url: /index.html
+ - title: About Us
+   url: /about
+ - title: Contact Us
+   url: /contact
+
+social:
+   github: commutercreative
+   twitter: commutercreative
+   facebook: commutercreative
+   email: contact@commutercreative.com
+
+google_analytics: "UA-58263416-1"

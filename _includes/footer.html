@@ -1,0 +1,15 @@
+<footer class="footer">
+   <div class="footer__container wrap">
+     <a class="footer__logo" href="{{ site.baseurl }}/"><img src="{{ site.url }}/assets/img/commuter_logo.svg" alt="Commuter Creative Themes"></a>
+     <p class="footer__copy">&copy; {{ site.time | date: '%Y' }} {{ site.title  }}</p>
+      <nav class="footerNav">
+        <ul class="noList footerNav__list">
+          {% for link in site.navigation %}{% assign current = nil %}{% if page.url contains link.url or forloop.first and page.url == '/' or page.url == 'index.html' %}{% assign current = 'current' %}{% endif %}
+          <li class="footerNav__link {% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
+            <a href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+   </div>
+</footer><!-- end .footer -->

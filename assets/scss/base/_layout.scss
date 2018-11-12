@@ -1,0 +1,6 @@
+.wrap {
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: 0 auto;
+  max-width: map-get($breakpoints, wrap);
+}

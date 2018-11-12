@@ -1,0 +1,44 @@
+header {
+  text-align: center;
+}
+
+.header__logo {
+  margin-bottom: 0;
+
+  a {
+    display: block;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.headerNav {
+  margin-top: rem(20);
+}
+
+.headerNav__link {
+  display: inline-block;
+
+  a {
+    display: inline-block;
+    @include nav-text;
+    padding: rem(20) rem(5);
+
+    &:hover {
+      border-bottom: rem(4) solid $gold;
+    }
+
+    @include min(md) {
+      padding: rem(20) rem(10);
+    }
+  }
+
+  &.current {
+    a {
+      border-bottom: rem(4) solid $maroon;
+    }
+  }
+}

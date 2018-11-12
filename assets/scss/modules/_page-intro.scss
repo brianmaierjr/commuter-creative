@@ -1,0 +1,12 @@
+.pageIntro {
+  background-color: $gray--light;
+  @include sectionspace();
+}
+
+.pageIntroContainer {
+  max-width: map-get($wraps, lg);
+
+  p {
+    @include intro-text();
+  }
+}

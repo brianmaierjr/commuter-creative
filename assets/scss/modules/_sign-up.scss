@@ -1,0 +1,17 @@
+.signup {
+  background-color: $gray--light;
+  @include sectionspace();
+  text-align: center;
+
+  .wrap {
+    max-width: map-get($wraps, lg);
+
+    p {
+      @include intro-text();
+    }
+  }
+}
+
+.signup__heading {
+  @include heading-text;
+}

@@ -1,105 +1,28 @@
-<!doctype html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Commuter Creative | Midwest Web Design and Development</title>
-  <meta name="description" content="">
-  <meta property="og:image" content="http://commutercreative.com/img/facebook.png"/>
-  <meta property="og:url" content="http://commutercreative.com"/>
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta property="og:site_name" content="Commuter Creative | Midwest Web Design and Development"/>
-  <meta property="og:description" content="Commuter Creative is Web Design studio from the midwest that specializes in creating beautiful & useable interfaces for the web and mobile."/>
-  
-  	<link rel="apple-touch-icon-precomposed" href="apple-touch-icon2.png">
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+---
+layout: default
+title: Frameset
+---
 
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-  
-  <link rel="shortcut icon" href="/favicon.ico">
-  
-  <!-- Google Font: Cabin -->
-  <link href='http://fonts.googleapis.com/css?family=Cabin:700italic' rel='stylesheet' type='text/css'>
+<div class="home" id="home">
 
-<meta name="viewport" content="width=device-width; initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/add2home.css">
-
-  <script src="js/libs/modernizr-2.5.3.min.js"></script>
-</head>
-<body>
-	<div class="opl"><a href="http://onepagelove.com/commuter-creative" target="_blank">Your Site Name featured on One Page Love</a></div>
-<div id="home" class="section">
- <div id="header">
-  <div id="city">
-	<div id="bike-container"> 
-		<div id="bike"></div>
-		<div id="wheel1"></div>
-		<div id="wheel2"></div>
-	</div>
+  <div class="pageIntro">
+    <div class="pageIntroContainer wrap">
+      <p>We create super clean, minimal, and highly usable themes for Jekyll and WordPress (coming soon). Our themes are different because we don’t overload them with options. Instead, we focus on usability, performance and accessibility.</p>
+    </div>
   </div>
 
-  <!-- Clouds -->
-	<img src="img/cloud2.png" class="cloud2" alt="" />
-	<img src="img/cloud1.png" class="cloud1" alt="" />
-	<img src="img/plane.png" class="plane" alt="" />
+  <div class="themes">
+    <div class="themes__section themes__section--free wrap">
+      <h2 class="decorative">Free Themes</h2>
+      {% for theme in themes %}
+      <h3>
+        <a href="{{ theme.url }}">
+          {{ theme.name }}
+        </a>
+      </h3>
+      <p>{{ theme.content | markdownify }}</p>
+      {% endfor %}
+    </div>
+  </div>
 
- </div><!-- end #header -->
-
-	<div id="intro">
-	  <h1>Commuter Creative | Design with Direction</h1>
-
-	  <!-- AddThis Buttons -->
-		<div class="addthis_toolbox addthis_default_style ">
-		<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-		<a class="addthis_button_tweet"></a>
-		</div>
-		<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-		<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f24bc5024e4d1df"></script>
-
-	</div>
-	
-	<a class="who-made-this" href="http://brianmaierjr.com" target="_blank">Who made this?</a>
-
-</div><!-- end #home -->
-
-<div id="about" class="section">
-	<h2>this is a new section!</h2>
 </div>
- 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/script.js"></script>
-	<script type="text/javascript">
-	
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-32824940-1']);
-	  _gaq.push(['_trackPageview']);
-	
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-	
-	</script>
-	<!-- Add to Home Screen -->
-	<script type="text/javascript">
-	var addToHomeConfig = {
-		animationIn: 'bubble',
-		animationOut: 'drop',
-		lifespan:10000,
-		expire:2,
-		touchIcon:true,
-	};
-	</script>
-	<script type="application/javascript" src="js/add2home.js"></script>
-
-</body>
-</html>
