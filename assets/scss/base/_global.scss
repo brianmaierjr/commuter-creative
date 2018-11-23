@@ -13,7 +13,7 @@ html {
 
 body {
   font-family: $sans-serif;
-  line-height: 1.75;
+  line-height: 1.5;
   font-size: 112.5%; // 18px base font size
   color: $black;
   overflow-x: hidden;
@@ -47,4 +47,5 @@ audio,
 iframe,
 object {
   max-width: 100%;
+  height: auto;
 }

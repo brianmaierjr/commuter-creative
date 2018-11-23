@@ -31,7 +31,7 @@
 }
 
 // Standard section spacing
-@mixin sectionspace($pixels-sm: 40, $pixels-lg: 60) {
+@mixin sectionspace($pixels-sm: 40, $pixels-lg: 80) {
   padding-top: rem($pixels-sm);
   padding-bottom: rem($pixels-sm);
 
@@ -69,13 +69,17 @@ TEXT MIXINS
   @include min(md) {
     font-size: rem(16);
   }
+
+  @include min(lg) {
+    font-size: rem(18);
+  }
 }
 
 // intro text
 @mixin intro-text {
   font-family: $serif;
   font-size: rem(22);
-  line-height: 1.6;
+  line-height: 1.7;
 
   @include min(md) {
     font-size: rem(30);

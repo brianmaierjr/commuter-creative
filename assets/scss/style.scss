@@ -16,9 +16,15 @@
 @import "modules/page-intro";
 @import "modules/sign-up";
 @import "modules/themes";
+@import "modules/signup-form";
 
 // Import Partials
 @import "partials/header";
 @import "partials/footer";
 
-// Mobile up base styles
+// Page specific
+@import "pages/home";
+@import "pages/theme";
+
+// Vendor styles
+@import "vendor/aos";

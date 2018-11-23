@@ -1,0 +1,12 @@
+.singupForm {
+  @include min(md) {
+    display: flex;
+  }
+
+  input[type="text"] {
+    @include min(md) {
+      margin-right: rem(10);
+      flex: 1;
+    }
+  }
+}

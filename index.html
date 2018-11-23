@@ -12,16 +12,15 @@ title: Frameset
   </div>
 
   <div class="themes">
-    <div class="themes__section themes__section--free wrap">
-      <h2 class="decorative">Free Themes</h2>
-      {% for theme in themes %}
-      <h3>
-        <a href="{{ theme.url }}">
-          {{ theme.name }}
+    <div class="themesSection themesSection--free wrap">
+      <h1 class="h2 decorative">Free Jekyll Themes</h1>
+      <div class="themesContainer">
+      {% for theme in site.themes %}
+        <a class="themesItem" href="{{ theme.url }}" data-aos="fade-up">
+          <img src="{{ site.url }}/assets/img/{{ theme.featured-image }}" alt="">
         </a>
-      </h3>
-      <p>{{ theme.content | markdownify }}</p>
       {% endfor %}
+      </div>
     </div>
   </div>
 

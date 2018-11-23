@@ -16,13 +16,11 @@ collections:
     output: true
     permalink: /themes/:path/
 
-navigation:
- - title: Themes
-   url: /index.html
- - title: About Us
-   url: /about
- - title: Contact Us
-   url: /contact
+navigation: 
+ - title: Long Haul
+   url: /themes/long-haul/
+ - title: Uni
+   url: /themes/uni/
 
 social:
    github: commutercreative

@@ -1,6 +1,6 @@
 .pageIntro {
   background-color: $gray--light;
-  @include sectionspace();
+  @include sectionspace(60, 100);
 }
 
 .pageIntroContainer {
@@ -8,5 +8,6 @@
 
   p {
     @include intro-text();
+    margin-bottom: 0;
   }
 }

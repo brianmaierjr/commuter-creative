@@ -1,0 +1,86 @@
+.themeIntro {
+  background-color: $gray--light;
+  @include sectionspace(60, 100);
+
+  &Container {
+    @include min(md) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__thumb {
+    @include min(md) {
+      flex: 0 1 rem(300);
+    }
+    @include min(lg) {
+      flex: 0 1 rem(450);
+    }
+
+    img {
+      transition: 0.2s all ease-in-out;
+
+      &:hover {
+        transform: translateY(-0.5rem);
+      }
+    }
+  }
+
+  &__info {
+    margin-bottom: rem(40);
+
+    @include min(md) {
+      margin-bottom: 0;
+      margin-right: rem(20);
+      flex: 1;
+    }
+
+    @include min(lg) {
+      margin-right: rem(40);
+    }
+
+    p {
+      font-family: $serif;
+      font-size: rem(20);
+
+      @include min(lg) {
+        font-size: rem(26);
+      }
+    }
+  }
+
+  &__button--github {
+    background-color: $maroon;
+  }
+}
+
+.themeFeatures {
+  @include sectionspace();
+
+  &__header {
+    text-align: center;
+  }
+
+  &Container {
+    @include min(md) {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+
+  &Item {
+    background: $gray--light;
+    padding: rem(20);
+    margin-bottom: rem(20);
+
+    @include min(md) {
+      flex: 0 1 calc(50% - 40px);
+      margin: rem(20);
+    }
+
+    @include min(lg) {
+      flex: 0 1 calc(33% - 40px);
+    }
+  }
+}
