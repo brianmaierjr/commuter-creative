@@ -1,6 +1,7 @@
 .themeIntro {
-  background-color: $gray--light;
+  background-color: $black;
   @include sectionspace(60, 100);
+  color: white;
 
   &Container {
     @include min(md) {

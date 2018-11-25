@@ -6,7 +6,11 @@
 .footer__logo {
   display: block;
   max-width: rem(380);
-  margin: 0 auto;
+  margin: 0 auto rem(20);
+}
+
+.footer__copy {
+  font-size: rem(14);
 }
 
 .footerNav__link {

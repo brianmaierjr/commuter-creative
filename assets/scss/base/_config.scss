@@ -3,7 +3,7 @@ COLOR VARIABLES
 ***************/
 $maroon: #660828;
 $gold: #c19108;
-$black: #4d4d4d;
+$black: #333;
 $gray: #e4e4e4;
 $gray--light: #f5f5f5;
 
@@ -20,7 +20,7 @@ $line-height: 44px; // Consistent height for buttons, inputs etc.
 /***************
 TYPE SETTINGS
 ***************/
-$sans-serif: "Arimo", Helvetica, Arial, sans-serif;
+$sans-serif: "Muli", Helvetica, Arial, sans-serif;
 $serif: "Zilla Slab", Georgia, Times, serif;
 $condensed: "Fjalla One", sans-serif;
 
@@ -37,7 +37,7 @@ $breakpoints: (
   sm: 481px,
   md: 768px,
   lg: 1080px,
-  wrap: 1440px
+  wrap: 1240px
 );
 
 /***************
