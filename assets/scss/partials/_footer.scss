@@ -1,0 +1,28 @@
+.footer {
+  @include sectionspace;
+  text-align: center;
+}
+
+.footer__logo {
+  display: block;
+  max-width: rem(380);
+  margin: 0 auto rem(20);
+}
+
+.footer__copy {
+  font-size: rem(14);
+}
+
+.footerNav__link {
+  display: inline;
+  @include nav-text;
+  padding: 0 rem(5);
+
+  @include min(md) {
+    padding: 0 rem(10);
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

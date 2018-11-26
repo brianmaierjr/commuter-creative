@@ -1,0 +1,43 @@
+/***************
+BUTTON DEFAULTS
+***************/
+
+@mixin button($btn-color: $gold) {
+  background-color: $btn-color;
+  display: inline-block;
+  position: relative;
+  font-family: $sans-serif;
+  letter-spacing: rem(0.8);
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+  line-height: 1.2em;
+  font-weight: normal;
+  padding: rem(17) rem(40);
+  border: 0;
+  border-radius: rem(40);
+  cursor: pointer;
+  margin-bottom: 0.5em;
+  transition: background-color 0.14s ease-in-out;
+  border: none;
+  outline: 0;
+  text-transform: uppercase;
+
+  // hovering on the btn
+  &:hover,
+  &:focus {
+    color: white;
+    text-decoration: none;
+    background-color: darken($maroon, 10%);
+  } // end hover
+} // end .button
+
+// Default button class
+.button {
+  @include button();
+}
+
+.button--sm {
+  font-size: rem(16);
+  padding: rem(12) rem(25);
+}

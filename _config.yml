@@ -1,0 +1,31 @@
+title: Commuter Creative
+description: The best Jekyll themes on the planet
+
+# url: http://brianmaierjr.github.com/frameset
+# baseurl: "/frameset"
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
+
+markdown: kramdown
+highlighter: rouge
+gems: [jekyll-paginate]
+paginate: 5
+
+collections:
+  themes:
+    output: true
+    permalink: /themes/:path/
+
+navigation: 
+ - title: Long Haul
+   url: /themes/long-haul/
+ - title: Uni
+   url: /themes/uni/
+
+social:
+   github: commutercreative
+   twitter: commutercreative
+   facebook: commutercreative
+   email: contact@commutercreative.com
+
+google_analytics: "UA-58263416-1"

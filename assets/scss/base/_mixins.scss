@@ -1,0 +1,94 @@
+/// Pixels to Rems Function
+/// Return a rem value of the exact amount of pixels that you need
+/// @example
+///     padding: rem(20);
+@function rem($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}rem;
+}
+
+// Responsive Mixin Mobile First
+// @include min(md);
+@mixin min($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    $value: map-get($breakpoints, $breakpoint);
+
+    @media screen and (min-width: $value) {
+      @content;
+    }
+  }
+}
+
+// Responsive Mixin
+// @include max((md);
+@mixin max($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    $value: map-get($breakpoints, $breakpoint);
+
+    @media screen and (max-width: $value) {
+      @content;
+    }
+  }
+}
+
+// Standard section spacing
+@mixin sectionspace($pixels-sm: 40, $pixels-lg: 80) {
+  padding-top: rem($pixels-sm);
+  padding-bottom: rem($pixels-sm);
+
+  @include min(md) {
+    padding-top: rem($pixels-lg);
+    padding-bottom: rem($pixels-lg);
+  }
+}
+
+// Responsive background images
+@mixin responsivebackground($sm: $hero-sm, $md: $hero-md, $lg: $hero-lg) {
+  @media screen and (max-width: 800px) {
+    background-image: url("../images/"+$sm);
+  }
+  @media screen and (min-width: 801px) and (max-width: 1200px) {
+    background-image: url("../images/"+$md);
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url("../images/"+$lg);
+  }
+}
+
+/*********
+TEXT MIXINS
+*********/
+
+// nav text
+@mixin nav-text {
+  font-family: $sans-serif;
+  letter-spacing: rem(0.8);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: rem(14);
+
+  @include min(md) {
+    font-size: rem(16);
+  }
+
+  @include min(lg) {
+    font-size: rem(18);
+  }
+}
+
+// intro text
+@mixin intro-text {
+  font-family: $serif;
+  font-size: rem(22);
+  line-height: 1.7;
+
+  @include min(md) {
+    font-size: rem(30);
+  }
+}
+
+// heading text
+@mixin heading-text {
+  text-transform: uppercase;
+  font-family: $condensed;
+  font-weight: normal;
+}

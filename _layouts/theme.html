@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+{% include head.html %}
+
+<body class="single--theme" data-aos="fade-in">
+ {% include header.html %}
+
+  <main>
+
+    <div class="themeIntro">
+      <div class="themeIntroContainer wrap">
+        <div class="themeIntro__info">
+          <h1>{{ page.name }}</h1>
+          <p>{{ content }}</p>
+          <a href="{{ page.github }}" class="button button--sm themeIntro__button--github">Download on Github</a>
+          <a href="{{ page.demo }}" class="button button--sm themeIntro__button--demo">View Demo</a>
+        </div>
+        <div class="themeIntro__thumb">
+          <a href="{{ page.github }}">
+            <img src="{{ site.url }}/assets/img/{{ page.featured-image }}" alt="{{ page.name }} preview">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="themeFeatures">
+      <div class="wrap">
+        <h2 class="themeFeatures__header decorative">Theme Features</h2>
+        <div class="themeFeaturesContainer">
+          {% for feature in page.features %}
+            <div class="themeFeaturesItem" data-aos="fade-up">
+              <h3 class="themeFeaturesItem__heading h4">{{ feature.title }}</h3>
+              <p class="themeFeaturesItem__description">{{ feature.description }}</p>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    {% include sign-up.html %}
+  </main>
+
+ {% include footer.html %}
+ {% include scripts.html %}
+
+</body>
+
+</html>

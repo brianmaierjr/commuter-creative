@@ -1,0 +1,51 @@
+.themes {
+  &Container {
+    @include min(md) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.themesItem {
+  display: block;
+  overflow: hidden;
+  margin: rem(20);
+  position: relative;
+
+  &:before {
+    @include button();
+    content: "View Details";
+    position: absolute;
+    top: calc(50% + 1rem);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.2s all ease-in-out;
+    z-index: 10;
+    opacity: 0;
+    white-space: nowrap;
+  }
+
+  img {
+    transition: 0.2s all ease-in-out;
+  }
+
+  &:hover,
+  &:focus {
+    @include min(md) {
+      img {
+        opacity: 0.2;
+      }
+
+      &:before {
+        opacity: 1;
+        top: 50%;
+      }
+    }
+  }
+
+  @include min(md) {
+    margin: rem(40);
+  }
+}
