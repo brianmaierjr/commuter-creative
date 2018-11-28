@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html>
 
 {% include head.html %}
 
@@ -18,7 +18,11 @@
         </div>
         <div class="themeIntro__thumb">
           <a href="{{ page.github }}">
-            <img src="{{ site.url }}/assets/img/{{ page.featured-image }}" alt="{{ page.name }} preview">
+            <picture>
+              <source srcset="{{ site.url }}/assets/img/{{ page.featured-image }}.webp" type="image/webp">
+              <source srcset="{{ site.url }}/assets/img/{{ page.featured-image }}.png" type="image/png">
+              <img src="{{ site.url }}/assets/img/{{ page.featured-image }}.png" alt="{{ page.title }}">
+            </picture>
           </a>
         </div>
       </div>

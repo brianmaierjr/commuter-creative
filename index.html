@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Frameset
+title: Free Jekyll Themes by Commuter Creative
 ---
 
 <div class="home" id="home">
@@ -17,7 +17,11 @@ title: Frameset
       <div class="themesContainer">
       {% for theme in site.themes %}
         <a class="themesItem" href="{{ theme.url }}" data-aos="fade-up">
-          <img src="{{ site.url }}/assets/img/{{ theme.featured-image }}" alt="">
+          <picture>
+            <source srcset="{{ site.url }}/assets/img/{{ theme.featured-image }}.webp" type="image/webp">
+            <source srcset="{{ site.url }}/assets/img/{{ theme.featured-image }}.png" type="image/png">
+            <img src="{{ site.url }}/assets/img/{{ theme.featured-image }}.png" alt="{{ theme.title }}">
+          </picture>
         </a>
       {% endfor %}
       </div>
