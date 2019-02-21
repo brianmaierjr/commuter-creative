@@ -16,7 +16,7 @@ collections:
     output: true
     permalink: /themes/:path/
 
-navigation: 
+navigation:
  - title: Long Haul
    url: /themes/long-haul/
  - title: Uni
@@ -28,4 +28,4 @@ social:
    facebook: commutercreative
    email: contact@commutercreative.com
 
-google_analytics: "UA-58263416-1"
+google_analytics: "UA-32824940-1"
