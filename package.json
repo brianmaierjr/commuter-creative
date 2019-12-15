@@ -25,5 +25,9 @@
     "gulp",
     "sass",
     "browsersync"
-  ]
+  ],
+  "dependencies": {
+    "js-yaml": "^3.13.1",
+    "lodash.template": "^4.5.0"
+  }
 }
