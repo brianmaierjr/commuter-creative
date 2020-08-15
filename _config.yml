@@ -1,7 +1,7 @@
 title: Commuter Creative
 description: The best Jekyll themes on the planet
 
-url: https://commutercreative.com
+# url: https://commutercreative.com
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
